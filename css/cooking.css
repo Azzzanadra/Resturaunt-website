@@ -1,0 +1,216 @@
+nav{
+    display: flex;
+    justify-content: end;
+    column-gap: 50px;
+}
+nav img{
+    width: 4%;
+    mix-blend-mode: multiply;
+}
+nav img + img{
+    margin-right: 5%;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+}
+nav li{
+    list-style: none;
+    margin: 0 15px;
+    background: rgb(241, 209, 23);
+    border-radius: 3px;
+    padding: 8px;
+}
+a{
+    text-decoration: none;
+    padding: 6px;
+}
+nav ul a{
+    color: black;
+}
+#heading{
+    height: 560px;
+}
+#heading section{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 8%;
+}
+#heading section span{
+    background: rgb(209, 28, 28);
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 0 4px 4px 0;
+}
+header h1{
+    font-size: 62px;
+    width: 25%;
+    margin-top: 20%;
+}
+#heading section span, header h1, main div h2, main div p, main + section > section, main + section ul, #final{
+    color: white;
+}
+header h1{
+    margin-left: 8%;
+}
+input{
+    width: 350px;
+    height: 35px;
+}
+h2{
+    font-size: 40px;
+}
+main h2, main p, main  span{
+    margin-left: 55%;
+}
+main p{
+    width: 25%;
+}
+main p + span{
+    display: box;
+    background: orange;
+    border-radius: 4px;
+    padding: 8px;
+}
+header{
+    background-image: url("kebab.png");
+    background-size:100%;
+}
+main{
+    background: black;
+    background-image: url("shawarma.jpg");
+    padding: 20px 0;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 550px;
+}
+
+main + section{
+    width: 100%;
+    background: linear-gradient(rgb(5, 0, 0),rgb(49, 14, 14),rgb(70, 26, 26),rgb(49, 14, 14),rgb(5, 0, 0));
+    padding: 60px 0 100px 0;
+}
+main + section > section{
+    display: block;
+    text-align: center;
+}
+#images{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#images img{
+    margin: 20px;
+    width: 15%;
+}
+#images .inc{
+    width: 22.5%;
+}
+#images .little{
+    width: 22.5%;
+}
+main + section h2{
+    text-align: center;
+}
+main + section ul{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+
+main + section img{
+    width: 10%;
+}
+section ul + img{
+    margin-left: 30%;
+}
+section > span + span{
+    font-size: 20px;
+    font-weight: 700;
+}
+div + img{
+    width: 30%;
+    margin-left: 35%;
+}
+#final{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(black,rgb(34, 6, 6));
+    height: 340px;
+}
+#final h2{
+    margin-top: 12px;
+}
+#final section{
+    margin-top: 40px;
+}
+#final section + section{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+#final section + section div{
+    background: linear-gradient(rgb(255, 60, 0),rgb(223, 166, 61));
+    padding: 20px;
+    border-radius: 8px;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    background: orange;
+    height: 50px;
+}
+footer div{
+    display: flex;
+    justify-content: space-evenly;
+}
+footer span{
+    padding: 10px 10px;
+    color: white;
+    font-size: 26px;
+    border-radius: 12px;
+}
+
+@media screen and (max-width: 800px) {
+    nav li{
+        font-size: 12px;
+        margin: 0 5px;
+        padding: 4px;
+        font-weight: 700;
+    }
+    nav{
+        column-gap: 0;
+        justify-content: center;
+    }
+    input{
+        width: 130px;
+        height: 20px;
+    }
+    #heading section span{
+        padding: 5px;
+        font-size: 13px;
+    }
+    header h1{
+        font-size: 26px;
+        width: 50%;
+        margin-top: 8%;
+    }
+    #heading{
+        height: 155px;
+    }
+    nav ul{
+        padding-left: 0;
+    }
+    nav ul a{
+        padding: 0;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
